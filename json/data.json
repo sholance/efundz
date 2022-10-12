@@ -1,0 +1,40 @@
+{
+    "company": [
+        {
+            "id": 1,
+            "desc": "we sell asbestos for love island",
+            "name": "Dodo pizza",
+            "unavailable": false,
+            "round": "Pre seed",
+            "fullDesc": "Lorem ipsum dolor consectetur adipisicing elit. Optio facere corrupti esse, voluptatem unde accusantium ipsum consequatur asperiores",
+            "progress": 80,
+            "investors": {
+                "address": "0x00"
+            }
+        },
+        {
+            "id": 2,
+            "desc": "we sell asbestos for love island",
+            "name": "maybe pizza",
+            "unavailable": false,
+            "round": "Pre seed",
+            "fullDesc": "Lorem ipsum dolor consectetur adipisicing elit. Optio facere corrupti esse, voluptatem unde accusantium ipsum consequatur asperiores",
+            "progress": 100,
+            "investors": {
+                "address": "0x00"
+            }
+        },
+        {
+            "id": 3,
+            "desc": "we sell asbestos for love island",
+            "name": "hate pizza",
+            "unavailable": false,
+            "round": "Pre seed",
+            "fullDesc": "Lorem ipsum dolor consectetur adipisicing elit. Optio facere corrupti esse, voluptatem unde accusantium ipsum consequatur asperiores",
+            "progress": 90,
+            "investors": {
+                "address": "0x00"
+            }
+        }
+    ]
+}
