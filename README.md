@@ -1,10 +1,20 @@
-E fundz 
+<h1 align="center">Welcome to Efundz</h1>
 
-VC funding platform built on klaytn blockchain
+A VC funding platform built on klaytn blockchain (WIP) 
+
+## Getting Started
+
+```bash
+npm run dev
+# or
+yarn dev
+```
 
 
-Pre-seed funding stage.
-Series A funding
-Series B funding
-Series C funding
-Series D funding 
+![Alt text](screenshots/newProfile.png?raw=true "1")
+
+![Alt text](screenshots/newCompany.png?raw=true "2")
+
+![Alt text](screenshots/profile.png?raw=true "3")
+
+![Alt text](screenshots/connectWallet.png?raw=true "4")
