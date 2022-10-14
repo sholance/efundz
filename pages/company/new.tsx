@@ -1,14 +1,21 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { supabase } from '../../utils/client';
 import { useRouter } from "next/router";
 import { type } from 'os';
 import { AuthSession } from '@supabase/supabase-js'
 import { createRound } from '../../utils/caver';
+import { ToastContainer, toast } from 'react-toastify'
+import providerContext from '../../context/context'
 
+interface props {
+    roundCreate: any
+}
 
 function NewCompany({ session }: { session: AuthSession }) {
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('');
+    const [connectedAddress, setConnectedAddress] = useState();
+    const { caver, metamaskAddress, kaikasAddress } = useContext(providerContext)
     const Router = useRouter();
 
 
@@ -20,13 +27,23 @@ function NewCompany({ session }: { session: AuthSession }) {
         demo: "",
     });
 
-
     async function updateCompany() {
         try {
             const user = supabase.auth.user();
             if (!user) {
                 Router.push("/auth");
             }
+
+            createRound(
+                data.name,
+                "",
+                data.logo_url,
+                data.description,
+                "",
+                data.demo,
+                data.address,
+            )
+
             const updates = {
                 id: user!.id,
                 name: data.name,
