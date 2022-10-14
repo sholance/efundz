@@ -3,6 +3,7 @@ import { supabase } from '../../utils/client';
 import { useRouter } from "next/router";
 import { type } from 'os';
 import { AuthSession } from '@supabase/supabase-js'
+import { createRound } from '../../utils/caver';
 
 
 function NewCompany({ session }: { session: AuthSession }) {
